@@ -231,8 +231,8 @@ You may either:
 of a HSL library, if a HSL library is provided.
 
 Next to the HSL source packages, also **prebuild libraries** of HSL for macOS and Windows are
-available in the libHSL package from https://licences.stfc.ac.uk/product/libhsl
-and the Coin-HSL package from https://licences.stfc.ac.uk/product/coin-hsl.
+available in the libHSL package from https://licences.stfc.ac.uk/products/Software/HSL/LibHSL
+and the Coin-HSL package from https://licences.stfc.ac.uk/products/Software/HSL/coinhsl.
 Both can be used by %Ipopt when using the shared library loading mechanism
 described \ref LINEARSOLVERLOADER "below".
 
@@ -255,7 +255,7 @@ codes, you can specify the directory containing the `CoinHslConfig.h`
 header file and the linker flags for this library with the
 flags `--with-hsl-cflags` and `--with-hsl-lflags` flags, respectively,
 when running `configure` of %Ipopt  (see \ref COMPILEINSTALL).
-The JuliaHSL libs can not be used with `--with-hsl-lflags`, as they do
+The libHSL libs can not be used with `--with-hsl-lflags`, as they do
 not contain the necessary header files.
 
 \note The linear solvers MA57, HSL_MA77, HSL_MA86, HSL_MA97 can
@@ -278,7 +278,7 @@ which to load HSL routines if a HSL solver is selected. The name can contain
 a path; otherwise, the shared library search path (e.g., `LD_LIBRARY_PATH`)
 will be used.
 
-Prebuild HSL libraries are available from https://licences.stfc.ac.uk/product/julia-hsl (see also above).
+Prebuild HSL libraries are available from https://licences.stfc.ac.uk/products/Software/HSL/LibHSL (see also above).
 
 \subsection DOWNLOAD_MUMPS MUMPS Linear Solver
 
